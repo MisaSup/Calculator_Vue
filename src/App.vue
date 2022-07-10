@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img class="vue_logo" alt="Vue logo" src="./assets/logo.png">
+  <calc-wrapper/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CalcWrapper from "./components/CalcWrapper.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CalcWrapper
   }
 }
 </script>
@@ -21,6 +21,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+.vue_logo {
+  width: 50px;
 }
 </style>
